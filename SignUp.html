@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MedSpark - Sign Up</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+ 
+    <div class="flex items-center justify-center px-10 py-4 bg-white shadow-md">
+      <img src="Logo.png" alt="MedSpark Logo" class="h-24 w-auto px-6">
+      <nav class="flex space-x-6 items-center">
+        <a href="index.html" class="text-gray-700 hover:text-green-600">About MedSpark</a>
+        <a href="#" class="text-gray-700 hover:text-green-600">Contact Us</a>
+        <a href="#" class="text-gray-700 hover:text-green-600">How does it work?</a>
+        <a href="Login.html" class="bg-green-800 text-white px-4 py-1 rounded hover:bg-green-900">Log In</a>
+      </nav>
+    </div>
+ 
+  <div class="flex justify-center items-center min-h-screen bg-gray-100">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+      <h2 class="text-xl font-semibold text-center text-gray-900 mb-6">Sign up in MedSpark</h2>
+     
+      <form class="space-y-4" onsubmit="goHome(event)">
+        <input type="text" placeholder="Name" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-green-500">
+        <input type="text" maxlength="10" placeholder="DUI" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-green-500">
+        <input type="email" placeholder="Email" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-green-500">
+        <input type="password" placeholder="Password" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-green-500">
+ 
+        <button type="submit" class="w-full bg-green-800 text-white py-2 rounded hover:bg-green-900">Sign Up</button>
+      </form>
+ 
+      <p class="text-center text-sm text-gray-600 mt-4">
+        Do you already have an account? <a href="Login.html" class="text-green-600 hover:underline">Log in</a>
+      </p>
+    </div>
+  </div>
+ 
+  <script>
+    function goHome(event) {
+      event.preventDefault();
+      window.location.href = "home.html";
+    }
+  </script>
+</body>
+</html>
+

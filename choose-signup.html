@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choose Sign Up - MedSpark</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans flex items-center justify-center min-h-screen">
+
+  <div class="text-center">
+    <h1 class="text-2xl font-bold text-gray-900 mb-6">Register as:</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+
+      <!-- Card Usuario -->
+      <div onclick="window.location.href='SignUp.html'" 
+           class="cursor-pointer bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition">
+        <img src="Logo.png" alt="User" class="w-20 mx-auto mb-4">
+        <h2 class="text-lg font-semibold text-gray-800">User</h2>
+        <p class="text-sm text-gray-600 mt-2">Sign up as an individual user to access MedSpark services.</p>
+      </div>
+
+      <!-- Card Farmacia o Clínica -->
+      <div onclick="window.location.href='SignUpFarmacia.html'" 
+           class="cursor-pointer bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition">
+        <img src="Cross.png" alt="Clinic" class="w-20 mx-auto mb-4">
+        <h2 class="text-lg font-semibold text-gray-800">Pharmacy or Clinic</h2>
+        <p class="text-sm text-gray-600 mt-2">Sign up as a clinic or pharmacy to partner with MedSpark.</p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

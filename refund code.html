@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="min-h-screen bg-white flex flex-col">
+       <header class="flex items-center justify-between px-8 py-4 border-b">
+    <h1 class="text-2xl font-semibold text-black-800">MedSpark</h1>
+    <nav class="flex items-center gap-6 text-sm text-gray-600">
+      <a href="#" class="justify-between px-5 py-4 font-semibold ">Start</a>
+      <a href="#" class="justify-between px-5 py-4 font-semibold">Refunds</a>
+      <a href="#" class="justify-between px-5 py-4 font-semibold">Help</a>
+      <div class="w-8 h-8 rounded-full overflow-hidden">
+        <img src="Icono.png" alt="" class="w-full h-full object-cover">
+      </div>
+    </nav>
+  </header>
+        <main class="flex-grow flex flex-col items-center justify-center px-4">
+    <h2 class="text-4xl font-semibold text-gray-800 mb-6">Enter refund code</h2>
+    <form class="w-full max-w-md flex flex-col items-center gap-4">
+      <input type="number, text" placeholder="Enter refund code" class="w-full px-4 py-2 border border-black-300 rounded-md text-base text-gray-700 "/>
+      <button type="submit" class="px-9 py-2 bg-teal-700 text-white rounded-md hover:bg-teal-800 transition text-right"> Send </button>
+    </form>
+  </main>
+</div>
+</body>
+</html>

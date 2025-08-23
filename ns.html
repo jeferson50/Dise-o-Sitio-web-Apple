@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+     <div class="min-h-screen bg-white px-6 py-8">
+  <header class="flex items-center border-b justify-between">
+    <h1 class="text-2xl font-semibold py-8 text-black-800">MedSpark</h1>
+    <nav class="flex items-center gap-6 text-sm text-black-600">
+      <a href="#"class="font-semibold justify-between px-5">Home</a>
+      <a href="#"class="font-semibold justify-between px-5">Cashbacks</a>
+      <a href="#"class="font-semibold justify-between px-5">Help</a>
+      <div class="w-8 h-8 rounded-full overflow-hidden">
+        <img src="Icono.png" alt="" class="w-full h-full object-cover">
+      </div>
+    </nav>
+  </header>
+  <main class="mt-8 space-y-10">
+    <h2 class="text-2xl font-semibold text-black-800">Manage Posts</h2>
+    <section>
+      <h3 class="text-lg text-black-700 mb-4">Pharmacy Posts</h3>
+      <div class="overflow-x-auto">
+        <table class="min-w-full border rounded-lg">
+          <thead class="bg-gray-100 text-left text-sm text-gray-600">
+            <tr>
+              <th class="px-4 py-2">Title</th>
+              <th class="px-4 py-2">Description</th>
+              <th class="px-4 py-2">Start Date</th>
+              <th class="px-4 py-2">End Date</th>
+              <th class="px-4 py-2">Status</th>
+              <th class="px-4 py-2">Actions</th>
+            </tr>
+          </thead>
+          <tbody class="text-sm text-gray-700">
+            <tr class="border-t">
+              <td class="px-4 py-2">Summer Offer</td>
+              <td class="px-4 py-2">20% off on all sunscreens</td>
+              <td class="px-4 py-2">08/01/2024</td>
+              <td class="px-4 py-2">08/31/2024</td>
+              <td class="px-4 py-2">
+                <span class="inline-block px-2 py-1 text-xs font-medium bg-green-200 text-gray-800 rounded">Active</span>
+              </td>
+              <td class="px-4 py-2 space-x-2">
+                <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                <a href="#" class="text-red-600 hover:underline">Delete</a>
+              </td>
+            </tr>
+            <tr class="border-t">
+              <td class="px-4 py-2">Vitamins Promotion</td>
+              <td class="px-4 py-2">Buy 2 get 3 on selected vitamins</td>
+              <td class="px-4 py-2">09/01/2024</td>
+              <td class="px-4 py-2">09/30/2024</td>
+              <td class="px-4 py-2">
+                <span class="inline-block px-2 py-1 text-xs font-medium bg-yellow-100 text-yellow-800 rounded">Pending</span>
+              </td>
+              <td class="px-4 py-2 space-x-2">
+                <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                <a href="#" class="text-red-600 hover:underline">Delete</a>
+              </td>
+            </tr>
+            <tr class="border-t">
+              <td class="px-4 py-2">Vaccination Announcement</td>
+              <td class="px-4 py-2">Flu vaccination available</td>
+              <td class="px-4 py-2">10/15/2024</td>
+              <td class="px-4 py-2">11/30/2024</td>
+              <td class="px-4 py-2">
+                <span class="inline-block px-2 py-1 text-xs font-medium bg-yellow-100 text-yellow-800 rounded">Pending</span>
+              </td>
+              <td class="px-4 py-2 space-x-2">
+                <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                <a href="#" class="text-red-600 hover:underline">Delete</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section>
+      <h3 class="text-lg text-black-700 mb-4">Clinic Posts</h3>
+      <div class="overflow-x-auto">
+        <table class="min-w-full border rounded-lg">
+          <thead class="bg-gray-100 text-left text-sm text-gray-600">
+            <tr>
+              <th class="px-4 py-2">Title</th>
+              <th class="px-4 py-2">Description</th>
+              <th class="px-4 py-2">Start Date</th>
+              <th class="px-4 py-2">End Date</th>
+              <th class="px-4 py-2">Status</th>
+              <th class="px-4 py-2">Actions</th>
+            </tr>
+          </thead>
+          <tbody class="text-sm text-gray-700">
+            <tr class="border-t">
+              <td class="px-4 py-2">Free Medical Checkup</td>
+              <td class="px-4 py-2">Free general medical checkup for new patients</td>
+              <td class="px-4 py-2">07/01/2024</td>
+              <td class="px-4 py-2">07/31/2024</td>
+              <td class="px-4 py-2">
+                <span class="inline-block px-2 py-1 text-xs font-medium bg-green-200 text-gray-800 rounded">Active</span>
+              </td>
+              <td class="px-4 py-2 space-x-2">
+                <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                <a href="#" class="text-red-600 hover:underline">Delete</a>
+              </td>
+            </tr>
+            <tr class="border-t">
+              <td class="px-4 py-2">Vaccination Campaign</td>
+              <td class="px-4 py-2">COVID-19 vaccination available</td>
+              <td class="px-4 py-2">10/01/2024</td>
+              <td class="px-4 py-2">10/15/2024</td>
+              <td class="px-4 py-2">
+                <span class="inline-block px-2 py-1 text-xs font-medium bg-yellow-100 text-yellow-800 rounded">Pending</span>
+              </td>
+              <td class="px-4 py-2 space-x-2">
+                <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                <a href="#" class="text-red-600 hover:underline">Delete</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>
